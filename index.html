@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mo Designs: Chrome extensions for people who build websites</title>
+<meta name="description" content="Schema Scout, Tag Weight and Launch Check: three Chrome extensions for checking structured data, third-party tags and pre-launch quality. Free to use, with a one-time premium upgrade.">
+<style>
+  :root { color-scheme: light dark; --bg:#fff; --fg:#161a22; --muted:#5b6474; --card:#f5f6f8; --line:#dfe2e8; --link:#1d4ed8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12151b; --fg:#e9ebf0; --muted:#a2aaba; --card:#1c2029; --line:#313746; --link:#8fb0ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:64rem; margin:0 auto; padding:0 1.25rem; }
+  header { padding:3.5rem 0 2rem; }
+  .brand { font-weight:800; letter-spacing:.02em; }
+  h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.1; margin:.6rem 0 1rem; letter-spacing:-.02em; max-width:20ch; }
+  .lead { color:var(--muted); font-size:1.15rem; max-width:44rem; margin:0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); gap:1.25rem; padding:1.5rem 0 1rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:1.4rem; display:flex; flex-direction:column; }
+  .icon { width:52px; height:52px; border-radius:13px; display:grid; place-items:center; }
+  .card h2 { font-size:1.35rem; margin:.9rem 0 .1rem; }
+  .tag { color:var(--muted); margin:0 0 .8rem; }
+  .card h3 { font-size:.78rem; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin:1rem 0 .3rem; }
+  ul { margin:0; padding-left:1.15rem; }
+  li { margin:.2rem 0; }
+  .buy { margin-top:auto; padding-top:1.2rem; }
+  .btn { display:inline-block; padding:.6rem 1rem; border-radius:10px; color:#fff; font-weight:700; text-decoration:none; }
+  .btn:focus-visible, a:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .soon { display:block; color:var(--muted); font-size:.92rem; margin-top:.6rem; }
+  section.info { padding:1.5rem 0; max-width:46rem; }
+  section.info h2 { font-size:1.3rem; margin:0 0 .4rem; }
+  a { color:var(--link); }
+  footer { border-top:1px solid var(--line); margin-top:1.5rem; padding:1.5rem 0 3rem; color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">Mo Designs</div>
+  <h1>Chrome extensions for people who build websites</h1>
+  <p class="lead">Three small tools that each answer one question about the page in front of you. Free to use, with a one-time premium upgrade. No subscription, no account, no tracking.</p>
+</header>
+
+<main>
+<div class="grid">
+
+  <article class="card">
+    <div class="icon" style="background:#0f766e" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 128 128"><path d="M50 30c-10 0-14 4-14 12v10c0 6-3 9-8 10 5 1 8 4 8 10v10c0 8 4 12 14 12M78 30c10 0 14 4 14 12v10c0 6 3 9 8 10-5 1-8 4-8 10v10c0 8-4 12-14 12" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h2>Schema Scout</h2>
+    <p class="tag">Is this page's structured data correct?</p>
+    <h3>Free</h3>
+    <ul>
+      <li>Finds JSON-LD and microdata on any page</li>
+      <li>Pass, warning or fail for each entity</li>
+      <li>Checks the properties search engines look for</li>
+    </ul>
+    <h3>Premium</h3>
+    <ul>
+      <li>Schema the page is missing, based on its content</li>
+      <li>Ready-to-paste JSON-LD snippets</li>
+      <li>Report export (Markdown, JSON)</li>
+    </ul>
+    <div class="buy">
+      <a class="btn" style="background:#0f766e" href="https://buy.polar.sh/polar_cl_ddfJt9MSO5loddSegdzuuYKmuvRX82Hfej7zs14TbKN">Premium license: CA$19 one-time</a>
+      <span class="soon">Extension coming soon to the Chrome Web Store.</span>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="icon" style="background:#c2410c" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 128 128"><rect x="30" y="66" width="16" height="30" rx="3" fill="#fff"/><rect x="56" y="48" width="16" height="48" rx="3" fill="#fff"/><rect x="82" y="30" width="16" height="66" rx="3" fill="#fff"/></svg></div>
+    <h2>Tag Weight</h2>
+    <p class="tag">What do the third-party tags on this page cost?</p>
+    <h3>Free</h3>
+    <ul>
+      <li>Every analytics, ad and chat vendor, by name</li>
+      <li>Requests and weight for each one</li>
+      <li>Clean first-visit measurement in one click</li>
+    </ul>
+    <h3>Premium</h3>
+    <ul>
+      <li>Main-thread time per vendor</li>
+      <li>Render-blocking and duplicate tags, with fixes</li>
+      <li>Audit export (CSV, Markdown)</li>
+    </ul>
+    <div class="buy">
+      <a class="btn" style="background:#c2410c" href="https://buy.polar.sh/polar_cl_9RSyQPhevaRS7bS7haXFIRORrR1RECfOInDzI18pdne">Premium license: CA$19 one-time</a>
+      <span class="soon">Extension coming soon to the Chrome Web Store.</span>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="icon" style="background:#1d4ed8" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 128 128"><path d="M34 66l20 20 40-46" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h2>Launch Check</h2>
+    <p class="tag">Is this page ready to go live?</p>
+    <h3>Free</h3>
+    <ul>
+      <li>Meta tags, social cards and headings</li>
+      <li>Images, links and form labels</li>
+      <li>Catches noindex and staging links before launch</li>
+    </ul>
+    <h3>Premium</h3>
+    <ul>
+      <li>Broken-link checker for the whole page</li>
+      <li>Share card preview</li>
+      <li>Report export (Markdown, CSV)</li>
+    </ul>
+    <div class="buy">
+      <a class="btn" style="background:#1d4ed8" href="https://buy.polar.sh/polar_cl_LYj6wG3dEsULKZpObS32bWCCM59BV5LWRnbCi23fLJ6">Premium license: CA$19 one-time</a>
+      <span class="soon">Extension coming soon to the Chrome Web Store.</span>
+    </div>
+  </article>
+
+</div>
+
+<section class="info">
+  <h2>How premium works</h2>
+  <p>Each extension is free to install and use. Premium is a one-time purchase per extension. After checkout you receive a license key; paste it into the extension to unlock the premium features. One key works on up to three browsers, and it does not expire. Payments are handled by Polar, which acts as merchant of record.</p>
+</section>
+
+<section class="info">
+  <h2>Private by design</h2>
+  <p>The extensions run only when you click them and do their work inside your browser. They collect no data and contain no analytics. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+</section>
+
+<section class="info">
+  <h2>Support</h2>
+  <p>Questions, problems with a license, or refund requests: <a href="mailto:mo_designs_codes-tech@yahoo.com">mo_designs_codes-tech@yahoo.com</a>.</p>
+</section>
+</main>
+
+<footer>© 2026 Mo Designs · <a href="privacy.html">Privacy policy</a></footer>
+</div>
+</body>
+</html>
